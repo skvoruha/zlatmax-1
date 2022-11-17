@@ -17,7 +17,7 @@ import "../scss/style.scss";
 // Плагины ============================================================================================================================================================================================================================================================================================================
 
 /* Динамический адаптив */
-//import "./libs/dynamic_adapt.js";
+import "./libs/dynamic_adapt.js";
 
 /* Форматирование чисел */
 //import './libs/wNumb.min.js';
@@ -42,7 +42,7 @@ flsFunctions.isWebp();
 Документация:
 Сниппет (HTML): spollers
 */
-// flsFunctions.spollers();
+flsFunctions.spollers();
 
 /*
 Модуль работы с табами
@@ -70,7 +70,7 @@ flsFunctions.isWebp();
 import * as flsForms from "./files/forms/forms.js";
 
 /* Работа с полями формы: добавление классов, работа с placeholder. */
-// flsForms.formFieldsInit();
+flsForms.formFieldsInit();
 
 /* Oтправка формы со встроенной валидацией полей. false - отключит валидацию */
 // flsForms.formSubmit(true);
@@ -115,7 +115,7 @@ import * as flsForms from "./files/forms/forms.js";
 Документация плагина: https://swiperjs.com/
 Сниппет(HTML): swiper
 */
-// import "./files/sliders.js";
+import "./files/sliders.js";
 
 // Модули работы с прокруткой страницы ========================================================================================================================================================================================================================================================
 
@@ -123,7 +123,7 @@ import * as flsForms from "./files/forms/forms.js";
 Изменение дизайна скроллбара
 Документация по работе в шаблоне: В HTML добавляем к блоку атрибут data-simplebar
 Документация плагина: https://github.com/Grsmto/simplebar/tree/master/packages/simplebar
-Сниппет(HTML): 
+Сниппет(HTML):
 */
 // import './files/scroll/simplebar.js';
 

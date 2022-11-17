@@ -1,3 +1,195 @@
-//====================================================================================================
+.footer {
 
-//====================================================================================================
+  // .footer__container
+  &__container {}
+
+  // .footer__body
+  &__body {
+    display: flex;
+    padding: rem(55) 0px rem(34) 0px;
+    flex-wrap: wrap;
+    @media (max-width:$tablet){
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+  }
+
+  &__info {
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+    margin: 0px 0px 56px 0px;
+    @media (max-width:$tablet){
+      flex: 0 0 100%;
+    }
+  }
+  // .footer__title
+  &__title {
+    @include adaptiveValue("font-size", 36, 24);
+    line-height: math.div(43, 36);
+    color: $mainGray;
+    @include adaptiveValue("padding-bottom", 50, 20);
+  }
+
+  // .footer__form
+  &__form {
+    max-width: percent(402,570);
+    display: flex;
+    flex-direction: column;
+    @media (max-width:$tablet){
+      max-width: 100%;
+      margin: 0px 0px rem(20) 0px;
+    }
+    &-input {
+      width: 100%;
+      margin: 0px 0px 24px 0px;
+      border: 1px solid #DEDEDE;
+      box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      height: rem(51);
+
+      padding-left: rem(22);
+      font-size: 12px;
+      line-height: 16px;
+      line-height: math.div(16, 12);
+      text-transform: uppercase;
+
+      color: rgba(45, 45, 45, 0.5);
+    }
+    &-textarea {
+      padding-top: rem(17);
+      height: rem(140);
+      margin: 0px 0px rem(24) 0px;
+    }
+    &-button {
+      padding: rem(10) rem(20) rem(12) rem(40);
+      background-color: $mainBlue;
+      border-radius: rem(50);
+      transition: background-color 0.3s ease 0s;
+      max-width: rem(220);
+      font-weight: 700;
+      font-size: 18px;
+      font-family: 'Open Sans';
+      line-height: math.div(22, 18);
+
+      text-align: center;
+
+      @media (any-hover: hover) {
+        &:hover {
+          background-color: #0284ff;
+        }
+      }
+      @media (max-width: $mobileSmall){
+        max-width: 100%;
+      }
+    }
+
+  }
+
+
+  // .footer__content
+  &__content {
+    flex: 1 1 auto;
+    margin-left: 3%;
+    @include adaptiveValue("margin-bottom", 30, 20);
+    @media (max-width:$tablet) {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+      }
+  }
+
+  // .footer__logos
+  &__logos {}
+}
+
+
+.content-footer {
+
+
+  &__body
+    {
+        max-height: rem(454);
+          max-width: rem(366);
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+    }
+
+  // .content-footer__image
+  &__image {
+
+    border-radius: rem(40);
+    overflow: hidden;
+    padding-bottom: percent(454,366);
+  }
+
+  // .content-footer__info
+  &__info {
+    position: absolute;
+    color: $mainGray;
+    max-width: rem(210);
+    background-color: $mainBlue;
+    padding: 13px 21px 19px 26px;
+    bottom: rem(40);
+    border-radius: rem(20);
+    left: rem(-50);
+    @media (max-width:$tablet){
+        left: rem(10);
+    }
+  }
+
+  // .content-footer__name
+  &__name {
+    @include adaptiveValue("font-size", 24, 18);
+    line-height: math.div(29, 24);
+    font-family: 'Russo One';
+  }
+
+  // .content-footer__position
+  &__position {
+    font-family: 'Open Sans';
+    @include adaptiveValue("font-size", 16, 14);
+    line-height: math.div(22, 16);
+  }
+}
+
+
+.logos-footer {
+  width: 100%;
+  // .logos-footer__list
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // .logos-footer__item
+  &__item {
+    flex: 0 0 30%;
+    gap: 3%;
+    max-width: rem(166);
+    min-height: rem(66);
+    width: 100%;
+    height: 100%;
+
+    border-radius: rem(20);
+    background-color: $mainGray;
+    padding: rem(3) rem(5) rem(12) rem(5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    &:not(:last-child){
+      margin-right: em(1,1);
+    margin-bottom: em(1,1);}
+    @media (max-width: $mobile){
+      min-width: rem(128);
+    }
+  }
+}
+
+.map {
+
+  // .map__container
+  &__container {}
+}

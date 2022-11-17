@@ -1,16 +1,558 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page ">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+  @@include('html/_head.htm',{ "title":"Атлант Газ" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="page__price price">
+          <div class="price__container">
+            <div class="price__body _icon-arrow-bottom">
+              <div class="price__title title">
+                Стоимость газа в ваш газгольдер сегодня
+              </div>
+
+              <div class="price__info">
+                <div class="price__info-pay pay-info">
+                  <h3 class="pay-info__title title">Пропан</h3>
+                  <div class="pay-info__subtitle title">
+                    от 25 рублей за литр
+                  </div>
+                  <div class="pay-info__text">
+                    Физически испарение происходит до -40 градусов, что
+                    позволяет использовать его в наших с вами погодных условиях
+                  </div>
+                  <div class="pay-info__button button">Заказать</div>
+                </div>
+                <div class="price__info-picture picture-ratio">
+                  <div class="picture-ratio__title title">
+                    Идеальное соотношение
+                  </div>
+                  <div class="picture-ratio__wrapper">
+                    <div class="picture-ratio__info">
+                      <div class="picture-ratio__percent">80%</div>
+                      <div class="picture-ratio__text">пропана</div>
+                    </div>
+                    <div class="picture-ratio__info">
+                      <div class="picture-ratio__percent">20%</div>
+                      <div class="picture-ratio__text">пропана</div>
+                    </div>
+                  </div>
+                  <div class="picture-ratio__image -ibg">
+                    <img src="img/price/01.png" alt="" srcset="" />
+                  </div>
+                </div>
+                <div class="price__info-pay pay-info">
+                  <h3 class="pay-info__title title">Бутан</h3>
+                  <div class="pay-info__subtitle title">
+                    от 16 рублей за литр
+                  </div>
+                  <div class="pay-info__text">
+                    Испарение Бутана происходит только до 0 градусов и годится
+                    для использования в тёплое время года
+                  </div>
+                  <div class="pay-info__button button">Заказать</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__advantages advantages">
+          <div class="advantages__container">
+            <div class="advantages__title title">
+              Преимущества работы с нашей компанией
+            </div>
+            <div class="advantages__wrapper">
+              <article class="advantages__card card-advantages">
+                <div class="card-advantages__content">
+                  <div class="card-advantages__image">
+                    <img src="img/advantages/01.png" alt="Каринка" />
+                  </div>
+                </div>
+                <div class="card-advantages__title title">
+                  Экономия на хранилище
+                </div>
+                <div class="card-advantages__text">
+                  за счёт собственных цистерн на нашей базе
+                </div>
+              </article>
+              <article class="advantages__card card-advantages">
+                <div class="card-advantages__content">
+                  <div class="card-advantages__image">
+                    <img src="img/advantages/02.png" alt="Каринка" />
+                  </div>
+                </div>
+                <div class="card-advantages__title title">
+                  Любые объёмы поставки качественного газа
+                </div>
+                <div class="card-advantages__text">
+                  вы получаете объем от 1 тонны до 20 тонн, с сертификатом
+                  качества газа
+                </div>
+              </article>
+              <article class="advantages__card card-advantages">
+                <div class="card-advantages__content">
+                  <div class="card-advantages__image">
+                    <img src="img/advantages/03.png" alt="Каринка" />
+                  </div>
+                </div>
+                <div class="card-advantages__title title">
+                  Длина заправочных рукавов — 50 метров
+                </div>
+                <div class="card-advantages__text">
+                  не требуется подъезд автомобиля вплотную к резервуару
+                </div>
+              </article>
+
+              <article class="advantages__card card-advantages">
+                <div class="card-advantages__content">
+                  <div class="card-advantages__image">
+                    <img src="img/advantages/04.png" alt="Каринка" />
+                  </div>
+                </div>
+                <div class="card-advantages__title title">
+                  Экономия на транспорте
+                </div>
+                <div class="card-advantages__text">
+                  более 10 собственный газовозов
+                </div>
+              </article>
+              <article class="advantages__card card-advantages">
+                <div class="card-advantages__content">
+                  <div class="card-advantages__image">
+                    <img src="img/advantages/05.png" alt="Каринка" />
+                  </div>
+                </div>
+                <div class="card-advantages__title title">
+                  Оплата удобным для вас способом
+                </div>
+                <div class="card-advantages__text">
+                  все газовозы оснащены терминалами для оплаты вашего заказа
+                </div>
+              </article>
+              <article class="advantages__card card-advantages">
+                <div class="card-advantages__content">
+                  <div class="card-advantages__image">
+                    <img src="img/advantages/06.png" alt="Каринка" />
+                  </div>
+                </div>
+                <div class="card-advantages__title title">
+                  Доставка сжиженного газа в формате 24/7
+                </div>
+                <div class="card-advantages__text">
+                  привезем газ в удобное для вас время или же по графику
+                </div>
+              </article>
+
+              <article class="advantages__card card-advantages">
+                <div class="card-advantages__content">
+                  <div class="card-advantages__image">
+                    <img src="img/advantages/07.png" alt="Каринка" />
+                  </div>
+                </div>
+                <div class="card-advantages__title title">
+                  Поставки напрямую от производителей
+                </div>
+                <div class="card-advantages__text">
+                  нет наценки на стоимость газа как у перекупщиков и небольших
+                  частных компаний
+                </div>
+              </article>
+              <article class="advantages__card card-advantages">
+                <div class="card-advantages__content">
+                  <div class="card-advantages__image">
+                    <img src="img/advantages/08.png" alt="Каринка" />
+                  </div>
+                </div>
+                <div class="card-advantages__title title">
+                  Чистый газ без примесей
+                </div>
+                <div class="card-advantages__text">
+                  нет наценки на стоимость газа как у перекупщиков и небольших
+                  частных компаний
+                </div>
+              </article>
+              <article class="advantages__card card-advantages">
+                <div class="card-advantages__content">
+                  <div class="card-advantages__image">
+                    <img src="img/advantages/09.png" alt="Каринка" />
+                  </div>
+                </div>
+                <div class="card-advantages__title title">
+                  Аттестованный персонал
+                </div>
+                <div class="card-advantages__text">
+                  квалифицированные сотрудники проведут полную консультацию и
+                  дадут рекомендации, если такие нужны будут
+                </div>
+              </article>
+            </div>
+            <div class="advantages__label label-advantages">
+              <div class="label-advantages__body">
+                <div class="label-advantages__content">
+                  <div class="label-advantages__img -ibg">
+                    <img src="img/label/01.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="label-advantages__info">
+                  <div class="label-advantages__title title">
+                    Благодаря нашему собственному автопарку мы можем давать
+                    гарантию, что доставим за 4 часа
+                  </div>
+                  <div class="label-advantages__button button">
+                    Это сильное конкурентное преимущество, которым мы дорожим
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__select select">
+          <div class="select__container">
+            <div class="select__body">
+              <h2 class="select__title title">Выберите свой объём Газовоза</h2>
+              <div class="select__dotts"></div>
+              <div class="select__slider slider-select">
+                <div class="slider-select__wrapper swiper-wrapper">
+                  <div class="slider-select__slide swiper-slide">
+                    <a href="#" class="slider-select__image -ibg_contain">
+                      <img src="img/select/01.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="slider-select__slide swiper-slide">
+                    <a href="#" class="slider-select__image -ibg">
+                      <img src="img/select/02.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="slider-select__slide swiper-slide">
+                    <a href="#" class="slider-select__image -ibg">
+                      <img src="img/select/03.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="slider-select__slide swiper-slide">
+                    <a href="#" class="slider-select__image -ibg_contain">
+                      <img src="img/select/04.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="slider-select__button button button-big">
+                Заказать газ
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="page__reviews reviews">
+          <div class="reviews__container">
+            <div class="reviews__body">
+              <h2 class="reviews__title title">Отзывы наших клиентов</h2>
+              <div class="reviews__slider slider-reviews">
+                <div class="slider-reviews__wrapper swiper-wrapper">
+                  <div class="slider-reviews__slide slide-reviews swiper-slide">
+                    <div class="slide-reviews__body">
+                      <div class="slide-reviews__content">
+                        <div class="slide-reviews__image -ibg">
+                          <img src="img/reviews/01.jpg" alt="" srcset="" />
+                        </div>
+                      </div>
+                      <div class="slide-reviews__info">
+                        <h3 class="slide-reviews__title title">Ольга И.</h3>
+                        <h5 class="slide-reviews__subtitle title">
+                          Красногорск
+                        </h5>
+                        <div class="slide-reviews__text">
+                          Я всегда боюсь газа , а особенно боюсь что он может
+                          взорваться, как же мне помог Андрей
+                          водитель-экспедитор показал что бояться тут нечего и
+                          самое главное моего присутствие даже не понадобится.
+                          Спасибо компании за то что они все закрыли этот вопрос
+                          под ключ.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-reviews__slide slide-reviews swiper-slide">
+                    <div class="slide-reviews__body">
+                      <div class="slide-reviews__content">
+                        <div class="slide-reviews__image -ibg">
+                          <img src="img/reviews/01.jpg" alt="" srcset="" />
+                        </div>
+                      </div>
+                      <div class="slide-reviews__info">
+                        <h3 class="slide-reviews__title title">Ольга И.</h3>
+                        <h5 class="slide-reviews__subtitle title">
+                          Красногорск
+                        </h5>
+                        <div class="slide-reviews__text">
+                          Я всегда боюсь газа , а особенно боюсь что он может
+                          взорваться, как же мне помог Андрей
+                          водитель-экспедитор показал что бояться тут нечего и
+                          самое главное моего присутствие даже не понадобится.
+                          Спасибо компании за то что они все закрыли этот вопрос
+                          под ключ.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-reviews__slide slide-reviews swiper-slide">
+                    <div class="slide-reviews__body">
+                      <div class="slide-reviews__content">
+                        <div class="slide-reviews__image -ibg">
+                          <img src="img/reviews/01.jpg" alt="" srcset="" />
+                        </div>
+                      </div>
+                      <div class="slide-reviews__info">
+                        <h3 class="slide-reviews__title title">Ольга И.</h3>
+                        <h5 class="slide-reviews__subtitle title">
+                          Красногорск
+                        </h5>
+                        <div class="slide-reviews__text">
+                          Я всегда боюсь газа , а особенно боюсь что он может
+                          взорваться, как же мне помог Андрей
+                          водитель-экспедитор показал что бояться тут нечего и
+                          самое главное моего присутствие даже не понадобится.
+                          Спасибо компании за то что они все закрыли этот вопрос
+                          под ключ.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-reviews__slide slide-reviews swiper-slide">
+                    <div class="slide-reviews__body">
+                      <div class="slide-reviews__content">
+                        <div class="slide-reviews__image -ibg">
+                          <img src="img/reviews/01.jpg" alt="" srcset="" />
+                        </div>
+                      </div>
+                      <div class="slide-reviews__info">
+                        <h3 class="slide-reviews__title title">Ольга И.</h3>
+                        <h5 class="slide-reviews__subtitle title">
+                          Красногорск
+                        </h5>
+                        <div class="slide-reviews__text">
+                          Я всегда боюсь газа , а особенно боюсь что он может
+                          взорваться, как же мне помог Андрей
+                          водитель-экспедитор показал что бояться тут нечего и
+                          самое главное моего присутствие даже не понадобится.
+                          Спасибо компании за то что они все закрыли этот вопрос
+                          под ключ.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-reviews__slide slide-reviews swiper-slide">
+                    <div class="slide-reviews__body">
+                      <div class="slide-reviews__content">
+                        <div class="slide-reviews__image -ibg">
+                          <img src="img/reviews/01.jpg" alt="" srcset="" />
+                        </div>
+                      </div>
+                      <div class="slide-reviews__info">
+                        <h3 class="slide-reviews__title title">Ольга И.</h3>
+                        <h5 class="slide-reviews__subtitle title">
+                          Красногорск
+                        </h5>
+                        <div class="slide-reviews__text">
+                          Я всегда боюсь газа , а особенно боюсь что он может
+                          взорваться, как же мне помог Андрей
+                          водитель-экспедитор показал что бояться тут нечего и
+                          самое главное моего присутствие даже не понадобится.
+                          Спасибо компании за то что они все закрыли этот вопрос
+                          под ключ.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="slider-reviews__button slider-reviews__button-next _icon-arrow-bottom"
+                ></button>
+                <button
+                  class="slider-reviews__button slider-reviews__button-prev _icon-arrow-bottom"
+                ></button>
+                <div class="slider-reviews__dotts"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__question question">
+          <div class="question__container">
+            <div class="question__body">
+              <div class="question__title">
+                Ответы на часто задаваемые вопросы
+              </div>
+              <div data-spollers class="spollers spollers-question">
+                <div class="spollers-question__wrapper">
+                  <button
+                    type="button"
+                    data-spoller
+                    class="spollers-question__title _icon-arrow"
+                  >
+                    Есть ли у вас инженеры в компании?
+                  </button>
+                  <div class="spollers-question__body">
+                    <ul class="spollers-question__list">
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div data-spollers class="spollers spollers-question">
+                <div class="spollers-question__wrapper">
+                  <button
+                    type="button"
+                    data-spoller
+                    class="spollers-question__title _icon-arrow"
+                  >
+                    А вы не испортите газон у меня и соседей?
+                  </button>
+                  <div class="spollers-question__body">
+                    <ul class="spollers-question__list">
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div data-spollers class="spollers spollers-question">
+                <div class="spollers-question__wrapper">
+                  <button
+                    type="button"
+                    data-spoller
+                    class="spollers-question__title _icon-arrow"
+                  >
+                    Вы предоставляете документы для субсидий?
+                  </button>
+                  <div class="spollers-question__body">
+                    <ul class="spollers-question__list">
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div data-spollers class="spollers spollers-question">
+                <div class="spollers-question__wrapper">
+                  <button
+                    type="button"
+                    data-spoller
+                    class="spollers-question__title _icon-arrow"
+                  >
+                    Смогу ли я заказать во время праздников?
+                  </button>
+                  <div class="spollers-question__body">
+                    <ul class="spollers-question__list">
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div data-spollers class="spollers spollers-question">
+                <div class="spollers-question__wrapper">
+                  <button
+                    type="button"
+                    data-spoller
+                    class="spollers-question__title _icon-arrow"
+                  >
+                    Делаете ли вы отчистку газгольдера?
+                  </button>
+                  <div class="spollers-question__body">
+                    <ul class="spollers-question__list">
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                      <li class="spollers-question__item">
+                        <a href="" class="spollers-question__link"
+                          >За счёт длинны в 50 м. делаем заправку не заезжая и
+                          не портим газон, а так же не мешаем соседям</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
 </html>
